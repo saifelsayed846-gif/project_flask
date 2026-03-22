@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+    
+    <title>page form</title>
+</head>
+<body>
+   <h1>
+    Welcom to my firest advence form
+   </h1>
+   {%for messag in get_flashed_messages()%}
+        <p style="color: rgb(237, 100, 100);">{{messag}}</p>
+    {%endfor%}    
+   
+   <form method="post">
+    <input type="text" placeholder="name here" name="name" >
+    <br>
+    <input type="text" placeholder="jop here" name="jop">
+    <br>
+    <input type="text" placeholder="password here" name="password">
+    <br>
+    <button type="submit">send</button>
+
+   </form>
+   <hr>
+   <h2>users</h2>
+   <hr>
+
+   <ul>
+    {% for user in users %}
+        <li>name:{{user[1]}}</li>
+        <li>jop:{{user[2]}}</li>
+        <li>password:{{user[3]}}</li>
+        <a href="/dele/{{user[0]}}">delete</a>
+        <br>
+        <a href="/update/{{user[0]}}">update</a>
+
+        <hr>
+    {%endfor%}    
+
+   </ul>
+</body>
+</html>

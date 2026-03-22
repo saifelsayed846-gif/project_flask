@@ -1,0 +1,30 @@
+h1 {
+    color: color-mix(in srgb, color percentage, color percentage);
+    text-align: center;
+    font-size: xx-large;
+}
+
+body {
+    background-color: rgb(152, 151, 151);
+
+}
+
+form {
+    background-color: rgb(49, 47, 47);
+    text-align: center;
+    margin: 50px;
+}
+
+input {
+    text-align: center;
+    background-color :rgb(230, 233, 236);
+    padding: 20px;
+    margin: 40px;
+    border: 2px solid black;
+}
+
+button {
+    background-color: rgb(87, 87, 167);
+    margin: 20px;
+    font-size: medium;
+}

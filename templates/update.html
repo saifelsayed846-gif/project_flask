@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+    
+    <title>page update</title>
+</head>
+<body>
+   <h1>
+    Welcom to my firest advence update form
+   </h1>
+    
+   
+   <form method="post">
+    <input type="text"  name="new_name" value="{{user[1]}}">
+    <br>
+    <input type="text"  name="new_jop" value="{{user[2]}}">
+    <br>
+    <input type="text"  name="new_password"  value="{{user[3]}}">
+    <br>
+    <button type="submit">send</button>
+
+   </form>
+   <a href="/">Back to the base page</a>
+   
+</body>
+</html>
