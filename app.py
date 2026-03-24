@@ -14,6 +14,3 @@ def dontfound(y):
 
 app.register_blueprint(crud)
 app.register_blueprint(auth)
-
-if __name__=='__main__':
-    app.run(port=app.config['PORT'],debug=app.config['DEBUG'])
