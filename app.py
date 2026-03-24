@@ -1,6 +1,9 @@
 from flask import Flask,render_template
 from routs.crud import crud
 from routs.auth import auth
+from db import create,get_db
+
+create()
 
 app=Flask(__name__)
 app.config.from_object('config')
